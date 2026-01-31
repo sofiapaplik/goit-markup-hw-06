@@ -664,6 +664,8 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
 @media screen and (min-width: 1158px) {
     .team-section-container {
         max-width: 1440px;
+    }
+    .team-section {
         background-color: #f4f4fd;
         padding: 120px 0;
     }
@@ -724,12 +726,8 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     gap: 48px;
 }
 .portfolio-item {
-    box-shadow: none;
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.portfolio-item:hover,
-.portfolio-item:focus {
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-card-image {
     position: relative;
@@ -775,6 +773,8 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
 @media screen and (min-width: 768px) {
     .portfolio-section-container {
         max-width: 768px;
+    }
+    .portfolio-section {
         margin: auto;
     }
     .portfolio-list {
@@ -788,7 +788,7 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
 
     .portfolio-item {
         width: calc((100% - 48px) / 2);
-        box-shadow: none;
+        box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08);
         transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 }
@@ -796,6 +796,8 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
 @media screen and (min-width: 1158px) {
     .portfolio-section-container {
         max-width: 1440px;
+    }
+    .portfolio-section {
         margin: auto;
         padding: 120px 0 120px 0;
     }
@@ -811,6 +813,10 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
         width: calc((100% - 48px) / 3);
         box-shadow: none;
         transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .portfolio-item:hover,
+    .portfolio-item:focus {
+        box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     }
 }
 
@@ -983,6 +989,7 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
             align-items: flex-start;
             text-align: left;
             gap: 72px 24px;
+            padding: 0 108px;
         }
         .footer-logo-container {
             max-width: 264px;
