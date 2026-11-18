@@ -47,6 +47,7 @@
 
 .footer-icon-container {
   width: 100%;
+  text-align: center;
 }
 
 .footer-icon-text,
@@ -177,6 +178,7 @@
 
   .footer-icon-container {
     width: 208px;
+    text-align: left;
   }
 
   .footer-icon-list {
@@ -195,6 +197,7 @@
 
   .footer-form-input {
     width: 264px;
+    max-width: 264px;
     flex-shrink: 0;
   }
 }
@@ -218,15 +221,17 @@
   }
 
   .footer-icon-container {
+    width: 208px;
+    margin-right: 80px;
     flex-shrink: 0;
   }
 
   .footer-subscribe {
     width: auto;
-    margin-left: auto;
   }
 
   .footer-form-input {
     width: 264px;
+    max-width: 264px;
   }
 }

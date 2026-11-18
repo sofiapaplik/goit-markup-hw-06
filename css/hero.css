@@ -74,8 +74,47 @@
   }
 }
 
-/* Зображення високої щільності для всіх розмірів екрана */
-@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+/* Мобільне зображення 2x */
+@media screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .main-section-title {
+    background-image:
+      linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url("../images/main-section2x.jpg");
+  }
+}
+
+/* Планшетне зображення */
+@media screen and (min-width: 768px) {
+  .main-section-title {
+    background-image:
+      linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url("../images/main-section.jpg");
+  }
+}
+
+/* Планшетне зображення 2x */
+@media screen and (min-width: 768px) and (min-resolution: 192dpi),
+  screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .main-section-title {
+    background-image:
+      linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url("../images/main-section2x.jpg");
+  }
+}
+
+/* Десктопне зображення */
+@media screen and (min-width: 1158px) {
+  .main-section-title {
+    background-image:
+      linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url("../images/main-section.jpg");
+  }
+}
+
+/* Десктопне зображення 2x */
+@media screen and (min-width: 1158px) and (min-resolution: 192dpi),
+  screen and (min-width: 1158px) and (min-resolution: 2dppx) {
   .main-section-title {
     background-image:
       linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
