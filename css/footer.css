@@ -90,6 +90,7 @@
 
 .footer-subscribe {
   width: 100%;
+  text-align: center;
 }
 
 .footer-form {
@@ -187,9 +188,15 @@
 
   .footer-subscribe {
     width: 100%;
+    text-align: left;
+  }
+
+  .footer-subscribe-title {
+    text-align: left;
   }
 
   .footer-form {
+    display: flex;
     flex-direction: row;
     align-items: center;
     gap: 24px;
@@ -226,8 +233,14 @@
     flex-shrink: 0;
   }
 
+  .footer-social-container {
+    margin-right: 0;
+  }
+
   .footer-subscribe {
     width: auto;
+    margin-left: auto;
+    text-align: left;
   }
 
   .footer-form-input {
